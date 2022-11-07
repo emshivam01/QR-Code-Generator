@@ -9,4 +9,5 @@ btn.addEventListener("click", () => {
   if (!value) return;
   qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${value}`;
   input.value = "";
+  section.classList.add("p-6");
 });
